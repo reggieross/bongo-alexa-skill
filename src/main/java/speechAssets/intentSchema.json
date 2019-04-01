@@ -1,0 +1,67 @@
+{
+  "intents": [
+    {
+      "name": "AMAZON.FallbackIntent",
+      "samples": []
+    },
+    {
+      "name": "AMAZON.CancelIntent",
+      "samples": []
+    },
+    {
+      "name": "AMAZON.HelpIntent",
+      "samples": []
+    },
+    {
+      "name": "AMAZON.StopIntent",
+      "samples": []
+    },
+    {
+      "name": "AMAZON.NavigateHomeIntent",
+      "samples": []
+    },
+    {
+      "name": "next",
+      "slots": [
+        {
+          "name": "route",
+          "type": "route"
+        },
+        {
+          "name": "stop_name",
+          "type": "stop_name"
+        },
+        {
+          "name": "stop_id",
+          "type": "stop_id"
+        }
+      ],
+      "samples": [
+        "what buses are coming to {stop_id}",
+        "what buses are coming to {stop_name}",
+        "when's the next {route} from {stop_name}",
+        "when's the next {route} from {stop_id}",
+        "how long till the next bus",
+        "When's the bus coming ",
+        "When is the next bus  "
+      ]
+    },
+    {
+      "name": "bus",
+      "slots": [
+        {
+          "name": "stop_id",
+          "type": "stop_id"
+        },
+        {
+          "name": "stop_name",
+          "type": "stop_name"
+        }
+      ],
+      "samples": [
+        "{stop_name}",
+        "{stop_id}"
+      ]
+    }
+  ]
+}
